@@ -6,7 +6,7 @@ metadata:
     name: locust
     role: worker
 spec:
-  replicas: 5
+  replicas: 100
   template:
     metadata:
       labels:
@@ -24,3 +24,5 @@ spec:
               value: locust-master
             - name: TARGET_HOST
               value: https://prod.wiki.tf
+            - name: LOCUST_MODEL
+              value: pyromania

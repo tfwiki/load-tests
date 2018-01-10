@@ -22,6 +22,8 @@ spec:
               value: master
             - name: TARGET_HOST
               value: https://prod.wiki.tf
+            - name: LOCUST_MODEL
+              value: pyromania
           ports:
             - name: loc-master-web
               containerPort: 8089
